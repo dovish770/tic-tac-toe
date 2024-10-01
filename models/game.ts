@@ -16,8 +16,7 @@ export enum gameStatus{
 
 type TicTacToeValue = 'x' | 'o' | null;
 
-interface Board {
-    y1: [TicTacToeValue, TicTacToeValue, TicTacToeValue];
-    y2: [TicTacToeValue, TicTacToeValue, TicTacToeValue];
-    y3: [TicTacToeValue, TicTacToeValue, TicTacToeValue]
+export interface Board {
+    [key: number]: 'X' | 'O' | null;
 }
+
